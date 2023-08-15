@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
 
     viewImg: {
         justifyContent:'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
 
     viewCima: {
@@ -65,23 +65,32 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
 
-    viewOsso: {
-
+    viewImgOsso: {
+        display: 'flex',
+        width:'100%',
+        alignItems: 'center', 
     },
 
     osso: {
-        flex: 1,
         display: 'flex',
-        height: MAX_HEIGHT * 0.058,
-        width: MAX_WIDTH * 0.125,
+        height: MAX_HEIGHT * 0.045,
+        width: MAX_WIDTH * 0.110,
         tintColor: "#D18162",
-        margin: 10
+        margin: 10,
+        right: '40%',
+        top: '5%'
     },
 
     txtOsso:{
         color: "#fff",
         fontWeight: "bold",
-        fontSize: 16
+        fontSize: 16,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        bottom: '4%',
+        right: '30%',
+        marginLeft: 30
     },
 
     

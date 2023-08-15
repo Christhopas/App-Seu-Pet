@@ -33,6 +33,7 @@ export default function ConquistasPage(){
     return (
         <View style = {styles.container}>
             <View style = {styles.viewimg}>
+                {/* Ajustar o tamnho pra fical igual a de td mundo*/}
                 <Image style = {styles.img} source = {require('../../assets/Icons/Conquistas.png')}/> 
             </View>  
             
