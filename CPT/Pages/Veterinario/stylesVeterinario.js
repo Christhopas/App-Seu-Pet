@@ -6,10 +6,11 @@ const MAX_HEIGHT = Dimensions.get('window').height;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        display: 'flex',
+        flexDirection: 'column',
         backgroundColor: "#63316D",
+        justifyContent: 'space-around',
+        alignItems: 'center',
         
-    
     },
 
     viewImg: {
@@ -94,15 +95,17 @@ const styles = StyleSheet.create({
     },
 
     
-    viewAvançarBtn: {
+    
+
+    viewVoltarBtn: {
         display: 'flex',
         flexDirection: 'column',
-        alignSelf: 'flex-end',
+        alignSelf: 'flex-start',
         top: '40%',
         marginLeft: 20,
     },
 
-    avançarBtn: {
+    voltarBtn: {
         backgroundColor: "#F8EC7D",
         borderRadius: 10,
         width: MAX_WIDTH * 0.25,
@@ -114,36 +117,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    txtAvançarBtn: {
+    txtVoltarBtn: {
         color: "#D18162",
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize: 20
     },
-
-    viewSairBtn: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignSelf: 'flex-end',
-        marginRight: 20,
-        bottom: '106%'
-    },
-
-    sairBtn: {
-        backgroundColor: "#6F1C1C",
-        width: MAX_WIDTH * 0.25,
-        height: MAX_HEIGHT * 0.04,
-        borderRadius: 10,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    txtSairBtn: {
-        color: '#fff',
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontSize: 20
-    }
 
 
 
