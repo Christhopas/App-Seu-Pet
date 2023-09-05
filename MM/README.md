@@ -5,4 +5,4 @@
 npm i react-native-bouncy-checkbox
 ```
 
-##### Tem coisa errada ainda (●'◡'●)
+
