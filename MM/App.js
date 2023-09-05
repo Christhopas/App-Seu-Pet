@@ -11,8 +11,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="Página de conquistas" component={ConquistasPage} options={{headerShown: false}} />
-        <Stack.Screen name="Página inicial 2" component={InicialPage2} options={{headerShown: false}} />  
+      <Stack.Screen name="Página inicial 2" component={InicialPage2} options={{headerShown: false}} />
+        <Stack.Screen name="Página de conquistas" component={ConquistasPage} options={{headerShown: false}} />  
         <Stack.Screen name="Página de Recuperar Senha" component={RecSenhaPage} options={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>

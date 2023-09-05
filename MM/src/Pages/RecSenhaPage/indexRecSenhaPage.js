@@ -44,6 +44,7 @@ export default function RecSenhaPage(){
                 />
             </View>
             <View style = {styles.viewBtn}>
+                {/* Colocar o link da pagina de login */}
                 <TouchableHighlight {...Voltar} style = {styles.VoltarBtn}> 
                     <Link to= {{screen: "Página inicial 2"}} style = {styles.txtBtn}>Voltar</Link>
                 </TouchableHighlight>

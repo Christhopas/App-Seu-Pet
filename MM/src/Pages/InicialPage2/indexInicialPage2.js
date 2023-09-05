@@ -28,45 +28,57 @@ export default function InicialPage2(){
 
     return(
         <View style = {styles.container}>
-            <View style = {styles.viewImgOsso}>
-                <Image style = {styles.osso} source = {require('../../assets/Icons/Osso.png')}/> 
-            </View>
-                <Text style = {styles.txtOsso}>Caramelo</Text>
-            <View style = {styles.viewImg}>
-                <View style = {styles. viewCima}>
-                    <View style = {styles. imgEsq}>
-                        {/* Colocar o link para a tela do pet Shop*/}
-                        <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/PetShop.png')}/> </Link>
-                        <Text style = {styles.txt}>Pet Shop</Text>
+            <View style = {styles.viewTop}>
+                <View style = {styles.viewPerfil}>
+                    <View style = {styles.viewImgOsso}>
+                        <Image style = {styles.osso} source = {require('../../assets/Icons/Osso.png')}/> 
                     </View>
-                    <View style = {styles. imgDir}>
-                        {/* Colocar o link para a tela do veterinário*/}
-                        <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/Vet.png')}/> </Link>
-                        <Text style = {styles.txt}>Veterinário</Text>
-                    </View>  
+                    <Text style = {styles.txtOsso}>Caramelo</Text>
                 </View>
-                <View style = {styles. viewBaixo}>
-                    <View style = {styles. imgEsq}>
-                        <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/Conquistas.png')}/></Link>
-                        <Text style = {styles.txt}>Conquistas</Text>
-                    </View>  
-                    <View style = {styles. imgDir}>
-                        <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/Config.png')}/> </Link>
-                        <Text style = {styles.txt}>Opções e<br/>ajuda</Text>
-                    </View>
-                </View>
-
-                <View style = {styles.viewVoltarBtn}>
-                    <TouchableHighlight {...Voltar}  style = {styles.voltarBtn}>
-                        <Link to= {{screen: "Página de Recuperar Senha"}} style = {styles.txtVoltarBtn}>{"<"}</Link>  
-                    </TouchableHighlight>
-                </View>
-                <View style = {styles.viewSairBtn}>
+                <View style = {styles.viewBtnSair}>
                     <TouchableHighlight {...Sair} style = {styles.sairBtn}>
                         {/*Colocar o link para a pagina de login*/}
                         <Link to= {{screen: "Página inicial 2"}} style = {styles.txtSairBtn}>Sair</Link>
                     </TouchableHighlight>
                 </View>
+            </View>
+            <View style = {styles.viewImg}>
+                <View style = {styles. viewCima}>
+                    <View style = {styles. imgEsq}>
+                        {/* Colocar o link para a tela do pet Shop*/}
+                        <View style = {styles.viewImgBloco}>
+                            <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/PetShop.png')}/> </Link>
+                        </View>
+                        <Text style = {styles.txt}>Pet Shop</Text>
+                    </View>
+                    <View style = {styles. imgDir}>
+                        {/* Colocar o link para a tela do veterinário*/}
+                        <View style = {styles.viewImgBloco}>
+                            <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/Vet.png')}/> </Link>
+                        </View>
+                        <Text style = {styles.txt}>Veterinário</Text>
+                    </View>  
+                </View>
+                <View style = {styles. viewBaixo}>
+                    <View style = {styles. imgEsq}>
+                        <View style = {styles.viewImgBloco}>                                                           
+                        <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/Conquistas.png')}/></Link>
+                        </View>
+                        <Text style = {styles.txt}>Conquistas</Text>
+                    </View>  
+                    <View style = {styles. imgDir}>
+                        <View style = {styles.viewImgBloco}>
+                            <Link to= {{screen: "Página de conquistas"}}> <Image style = {styles.img} source = {require('../../assets/Icons/Config.png')}/> </Link>
+                        </View>
+                        <Text style = {styles.txt}>Opções e<br/>ajuda</Text>
+                    </View>
+                </View>
+            </View>
+            <View style = {styles.viewVoltarBtn}>
+                <TouchableHighlight {...Voltar}  style = {styles.voltarBtn}>
+                    {/*Colocar o link para a pagina inicial 1*/}
+                    <Link to= {{screen: "Página de Recuperar Senha"}} style = {styles.txtVoltarBtn}>{"<"}</Link>  
+                </TouchableHighlight>
             </View>
         </View>
     )

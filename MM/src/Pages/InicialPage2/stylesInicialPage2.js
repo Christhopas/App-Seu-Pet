@@ -8,125 +8,29 @@ const styles = StyleSheet.create({
         flex: 1,
         display: 'flex',
         backgroundColor: "#63316D",
-        
-    
     },
 
-    viewImg: {
-        justifyContent:'center',
-        alignItems: 'center',
-    },
-
-    viewCima: {
-        flex: 1,
+    viewTop: {
         display: 'flex',
         flexDirection: 'row',
-        marginBottom: 70,
-        marginTop: 70
-       
+        justifyContent: 'space-around',
+        alignItems: 'flex-start',
+        marginTop: 20,
     },
 
-    viewBaixo: {
-        flex: 1,
+    viewPerfil: {
+        width: "30%",
         display: 'flex',
         flexDirection: 'row',
-        margin: 10
-    },
-
-    img: {
-        height: MAX_HEIGHT * 0.12,
-        width: MAX_WIDTH * 0.24,
-        tintColor: "#63316D",
-        margin: 10,
-        backgroundColor: "#D18162",
-        borderRadius: 10,
-        
-    },
-
-    imgEsq: {
-        marginLeft: 20,
-        marginRight: 20,
-       
-    },
-
-    imgDir: {
-        marginLeft: 20,
-        marginRight: 20,
-        
-    },
-
-
-    txt: {
-        color: '#fff',
-        fontSize: 20,
-        fontWeight: 'bold',
-        justifyContent: 'center',
         alignItems: 'center',
-        textAlign: 'center'
+        marginRight: 100
     },
 
-    viewImgOsso: {
+    viewBtnSair: {
         display: 'flex',
-        width:'100%',
-        alignItems: 'center', 
-    },
-
-    osso: {
-        display: 'flex',
-        height: MAX_HEIGHT * 0.045,
-        width: MAX_WIDTH * 0.110,
-        tintColor: "#D18162",
-        margin: 10,
-        right: '40%',
-        top: '5%'
-    },
-
-    txtOsso:{
-        color: "#fff",
-        fontWeight: "bold",
-        fontSize: 16,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        bottom: '4%',
-        right: '30%',
-        marginLeft: 30
-    },
-
-    
-    viewVoltarBtn: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignSelf: 'flex-start',
-        top: '40%',
-        marginLeft: 20,
-    },
-
-    voltarBtn: {
-        backgroundColor: "#F8EC7D",
-        borderRadius: 10,
-        width: MAX_WIDTH * 0.25,
-        height: MAX_HEIGHT * 0.04,
-        shadowColor: "#000",
-        shadowOffset: {width: 0, height: 4},
-        shadowOpacity: 0.6,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    txtVoltarBtn: {
-        color: "#D18162",
-        fontWeight: 'bold',
-        textAlign: 'center',
-        fontSize: 20
-    },
-
-    viewSairBtn: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignSelf: 'flex-end',
-        marginRight: 20,
-        bottom: '106%'
+        flexDirection: 'row',
+        alignSelf: 'center',
+        justifyContent: 'flex-end',
     },
 
     sairBtn: {
@@ -143,10 +47,105 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         fontSize: 20
-    }
+    },
 
+    viewImg: {
+        justifyContent:'center',
+        alignItems: 'center',
+    },
 
+    viewCima: {
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'row',
+        marginBottom: 70,
+        marginTop: 70,
+    },
 
+    viewBaixo: {
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'row',
+        margin: 10
+    },
+
+    imgEsq: {
+        marginLeft: 20,
+    },
+
+    imgDir: {
+        marginLeft: 20,
+        marginRight: 20,
+    },
+
+    viewImgBloco: {
+        backgroundColor: "#D18162",
+        borderRadius: 20,
+    },
+
+    img: {
+        height: 120,
+        width: 120,
+        tintColor: "#63316D",
+        margin: 20,
+    },
+
+    txt: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        margin: 5
+    },
+
+    viewImgOsso: {
+        display: 'flex',
+        marginLeft: 1,
+    },
+
+    osso: {
+        display: 'flex',
+        height: MAX_HEIGHT * 0.044,
+        width: MAX_WIDTH * 0.10,
+        tintColor: "#D18162",
+        margin: 10,
+    },
+
+    txtOsso:{
+        color: "#fff",
+        fontWeight: "bold",
+        fontSize: 16,
+        display: 'flex',
+    },
+
+    
+    viewVoltarBtn: {
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        marginBottom: 40,
+        marginLeft: 30
+    },
+
+    voltarBtn: {
+        backgroundColor: "#F8EC7D",
+        borderRadius: 10,
+        width: MAX_WIDTH * 0.25,
+        height: MAX_HEIGHT * 0.04,
+        shadowColor: "#000",
+        shadowOffset: {width: 0, height: 4},
+        shadowOpacity: 0.6
+    },
+
+    txtVoltarBtn: {
+        color: "#D18162",
+        fontWeight: 'bold',
+        textAlign: 'center',
+        fontSize: 20
+    },
 });
 
 export default styles;
