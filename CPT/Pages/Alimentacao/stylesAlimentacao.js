@@ -13,6 +13,19 @@ const styles = StyleSheet.create({
     
     },
 
+
+
+    tabela: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 15,
+        overflow: 'hidden',
+        height: MAX_HEIGHT * 0.40,
+        width: MAX_WIDTH * 1,
+        margin: 10,
+      },
+
+
     viewImg: {
         justifyContent:'center',
         alignItems: 'center',
