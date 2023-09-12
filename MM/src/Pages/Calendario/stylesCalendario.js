@@ -12,12 +12,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'      
     },
 
-    perfil: {
-        marginBottom: 500,
-    }, 
-
     viewimg: {
-        marginTop: MAX_HEIGHT * 0.015,
         backgroundColor: "#D18162",
         borderRadius: 25,
         marginBottom: 50,
@@ -38,7 +33,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: 'center',
         fontSize: 30,
-        marginTop: 15
+        marginTop: 20
     },
 
     ViewBtn: {
