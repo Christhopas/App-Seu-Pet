@@ -32,23 +32,24 @@ export default function ConquistasPage(){
 
     return (
         <View style = {styles.container}>
-            <View style = {styles.viewimg}>
-                {/* Ajustar o tamnho pra fical igual a de td mundo*/}
-                <Image style = {styles.img} source = {require('../../assets/Icons/Conquistas.png')}/> 
-            </View>  
-            
-            <Text style = {styles.txt}>Conquistas</Text>
-            
+            <View style = {styles.perfil}>
+                <View style = {styles.viewimg}>
+                    {/* Ajustar o tamnho pra fical igual a de td mundo*/}
+                    <Image style = {styles.img} source = {require('../../assets/Icons/Conquistas.png')}/> 
+                    <Text style = {styles.txt}>Conquistas</Text>
+                </View>  
+            </View>
+
             <Conquistas/>
             
-            <View style = {styles.ViewBtn}>
-                <TouchableHighlight {...Voltar} style = {styles.VoltarBtn}>
-                    <Link to= {{screen: "Página inicial 2"}} style = {styles.txtVBtn}>voltar</Link>
-                </TouchableHighlight>
-            </View>
             <View style = {styles.ViewABtn}>
                 <TouchableHighlight {...Avancar}  style = {styles.AvancarBtn}>
                     <Link to= {{screen: "Página inicial 2"}} style = {styles.txtABtn}>{">"}</Link>
+                </TouchableHighlight>
+            </View>
+            <View style = {styles.ViewBtn}>
+                <TouchableHighlight {...Voltar} style = {styles.VoltarBtn}>
+                    <Link to= {{screen: "Página inicial 2"}} style = {styles.txtVBtn}>voltar</Link>
                 </TouchableHighlight>
             </View>
         </View>

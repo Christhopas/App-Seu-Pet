@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
   
   check: {
     marginLeft: 20
-    
   }
     
 });
